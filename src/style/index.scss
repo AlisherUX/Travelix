@@ -1,0 +1,15 @@
+// Variables styles
+@import "./settings/fonts"; 
+@import "./variables/variable";  
+@import "./mixins/mixins";    
+@import "../style/settings/settings";
+
+//Componenets styles
+@import "./components/header";
+@import "./components/banner";
+@import "./components/about";
+@import "./components/services";
+@import "./components/trips";
+@import "./components/booking";
+@import "./components/feedback";
+@import "./components/footer";

@@ -1,0 +1,38 @@
+.about-component {
+  max-width: 1408px;
+  width: 100%;
+  margin-block: 90px 185px;
+}
+
+.about-services {
+  @include flexDirection;
+  gap: 30px;
+
+  &_card {
+    max-width: 400px;
+  }
+}
+
+.about-info {
+  @include flexDirection;
+  gap: 45px;
+}
+
+.about-entries {
+  gap: 15px;
+}
+
+.about-card_entries {
+  max-width: 300px;
+  width: 100%;
+  gap: 8px;
+}
+
+.about-card_title {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.title {
+  @include title;
+}

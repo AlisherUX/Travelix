@@ -1,0 +1,43 @@
+.titles-component{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    @include flexCenter;
+    gap: 12px;
+}
+
+.card-img{
+    width: 70px;
+    height: 70px;
+}
+
+.services-text,
+.card-text{
+    max-width: 865px;
+    width: 100%;
+    text-align: center;
+}
+.wrapper{
+    @include flexBetween;
+
+    &-card{
+        max-width: 270px;
+        width: 100%;
+        @include flexCenter;
+        @include flexDirection;
+        gap: 20px;
+        background-color: $light;
+        border-radius: 24px;
+        padding: 36px 19px;
+        transition: 0.5s;
+    }
+
+    &-card:hover{
+        box-shadow: 0px 2px 20px 4px #D8D8D8;
+    }
+}
+
+.card-text{
+    max-width: 100%;
+    margin-bottom: 12px;
+}

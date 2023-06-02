@@ -1,0 +1,38 @@
+.orange {
+  color: $orange;
+
+  &-btn {
+    padding: 13px 55px;
+    @include button;
+  }
+
+  &-btn:hover {
+    background: transparent;
+    color: $orange;
+  }
+}
+
+.header {
+  &-top {
+    padding-block: 34px;
+    @include flexBetween;
+
+    &_logo {
+      cursor: pointer;
+    }
+  }
+
+  &-menu {
+    @include flexAlignCenter;
+    gap: 48px;
+
+    &_link {
+      @include subtitle;
+      transition: 0.5s;
+    }
+
+    &_link:hover {
+      color: $orange;
+    }
+  }
+}

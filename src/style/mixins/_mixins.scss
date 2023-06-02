@@ -1,0 +1,53 @@
+@mixin flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin title {
+    font-family: $int-bol;
+    color: $dark;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+@mixin subtitle {
+    font-family: $int-bol;
+    color: $gray;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin button{
+    background-color: $orange;
+    border: 2px solid $orange;
+    color: $white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}

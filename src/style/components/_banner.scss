@@ -1,0 +1,146 @@
+.banner {
+  padding-block: 110px;
+
+  &-img {
+    position: relative;
+    max-width: 610px;
+    width: 100%;
+
+    &_circle {
+      position: absolute;
+      top: -150px;
+      left: 75px;
+      z-index: 5;
+    }
+
+    &_line {
+      position: absolute;
+      top: -220px;
+      left: 0px;
+      animation: 12s rotate infinite;
+    }
+
+    &_halfcircle {
+      position: absolute;
+      top: -205px;
+      left: 20px;
+      animation: 12s rotation infinite;
+    }
+
+    &_dots {
+      position: absolute;
+      bottom: -350px;
+      right: -50px;
+    }
+  }
+}
+
+.entries{
+  max-width: 570px;
+  width: 100%;
+  @include flexDirection;
+  gap: 30px;
+
+  &-title,
+  &-subtitle {
+    @include subtitle;
+    color: $dark;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  &-subtitle {
+    color: $gray;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  &-text {
+    @include subtitle;
+    font-family: $int-reg;
+  }
+}
+
+.inputs {
+  @include flexDirection;
+  gap: 5px;
+
+  &-wrapper {
+    max-width: 726px;
+    width: 100%;
+    border: 2px solid $light-dark;
+    border-radius: 16px;
+    padding: 16px 37px;
+  }
+
+  &-title {
+    @include subtitle;
+  }
+
+  &-btn {
+    width: 120px;
+    height: 50px;
+    @include button;
+    @include flexAround;
+  }
+}
+
+.input {
+  width: 165px;
+  height: 38px;
+  border-radius: 8px;
+  border: none;
+  padding-inline: 10px;
+  background-color: $white;
+  font-weight: 400;
+  color: $light-dark;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.search {
+  transform: translateY(18px);
+  transition: 0.4s;
+}
+
+.inputs-btn:hover .search {
+  transform: translateY(-18px);
+}
+
+.circles {
+  &-first {
+    position: absolute;
+    top: 15px;
+    left: -185px;
+    animation: 18s rotate infinite;
+  }
+
+  &-second {
+    position: absolute;
+    top: 58px;
+    right: -190px;
+    animation: 18s rotate infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

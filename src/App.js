@@ -1,26 +1,27 @@
-import React from "react";
-import HeaderTop from "./components/HeaderTop";
-import HeaderBanner from "./components/HeaderBanner";
-import About from "./components/About";
-import Services from "./components/Services";
-import Trips from "./components/Trips";
-import Booking from "./components/Booking";
-import Feedback from "./components/Feedback";
-import Footer from "./components/Footer";
+import React from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./Home";
+import About from "./pages/About"
+import Booking from "./pages/Booking"
+import Services from "./pages/Services"
+import SignIn from "./pages/SignIn"
+import SignUp from "./pages/SignUp"
+import Trips from "./pages/Trips"
 
 function App() {
+
   return (
-    <>
-      <HeaderTop />
-      <HeaderBanner />
-      <About />
-      <Services />
-      <Trips />
-      <Booking />
-      <Feedback />
-      <Footer />
-      
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/services" element={<Services />}/>
+        <Route path="/trips" element={<Trips />}/>
+        <Route path="/booking" element={<Booking />}/>
+        <Route path="/signin" element={<SignIn />}/>
+        <Route path="/signup" element={<SignUp />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

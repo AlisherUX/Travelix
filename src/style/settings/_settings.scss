@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: $int-bol;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.distinct-component{
+    width: 100%;
+    background-color: $lactic;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.padding-bottom{
+    padding-bottom: 50px;
+}
+
+.margin-bottom{
+    margin-bottom: 120px;
+}
+
+::placeholder {
+    font-family: $int-reg;
+    font-size: 14px;
+    color: $light-dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    filter: invert(95%) sepia(0%) saturate(421%) hue-rotate(152deg) brightness(87%) contrast(88%);
+}
