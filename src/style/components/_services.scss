@@ -17,6 +17,7 @@
     width: 100%;
     text-align: center;
 }
+
 .wrapper{
     @include flexBetween;
 
@@ -33,6 +34,7 @@
     }
 
     &-card:hover{
+        max-width: 290px;
         box-shadow: 0px 2px 20px 4px #D8D8D8;
     }
 }

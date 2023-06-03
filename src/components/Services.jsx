@@ -18,9 +18,9 @@ const Services = () => {
       </div>
 
       <div className="wrapper margin-bottom">
+
         <div className="wrapper-card">
           <img className="card-img" src={BookHotel} alt="" />
-
           <p className="title">Book Hotel</p>
           <p className="entries-text card-text">
             In-depth interviews with 19 owners of exceptionally successful
@@ -28,9 +28,9 @@ const Services = () => {
           </p>
           <button className="orange-btn">Explore More</button>
         </div>
+
         <div className="wrapper-card">
           <img className="card-img" src={BookTaxi} alt="" />
-
           <p className="title">Book Taxi</p>
           <p className="entries-text card-text">
             In-depth interviews with 19 owners of exceptionally successful
@@ -38,9 +38,9 @@ const Services = () => {
           </p>
           <button className="orange-btn">Explore More</button>
         </div>
+
         <div className="wrapper-card">
           <img className="card-img" src={BookPlane} alt="" />
-
           <p className="title">Book Plane</p>
           <p className="entries-text card-text">
             In-depth interviews with 19 owners of exceptionally successful
@@ -48,9 +48,9 @@ const Services = () => {
           </p>
           <button className="orange-btn">Explore More</button>
         </div>
+
         <div className="wrapper-card">
           <img className="card-img" src={GlobalTour} alt="" />
-
           <p className="title">Global Tour</p>
           <p className="entries-text card-text">
             In-depth interviews with 19 owners of exceptionally successful
@@ -58,6 +58,7 @@ const Services = () => {
           </p>
           <button className="orange-btn">Explore More</button>
         </div>
+        
       </div>
     </div>
   );
